@@ -13,9 +13,8 @@ public class ArrayNilai12 {
         for (int i = 0; i < 10; i++) {
             System.out.println("Masukkan nilai akhir ke-"+i+" adalah "+nilaiAkhir[i]);
         }
-
-
-        input12.close();
+        
+input12.close();
     }
     
 }
