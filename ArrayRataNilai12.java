@@ -6,13 +6,14 @@ public class ArrayRataNilai12 {
         
 
        
-        int nilaiMhs=0, banyakMhs, lulus=0, tidakLulus=0;
+        int nilaiMhs=0, lulus=0, tidakLulus=0;
         double total1 = 0, total2 = 0;
-        double rata2, rata1;
+        double rata2Lulus, rata2TidakLulus;
         System.out.print("Masukkan jumlah Mahasiswa     : ");
-        banyakMhs = input12.nextInt();
+        int n = input12.nextInt();
+        int[] banyakMhs = new int[n];
         
-        for (int i = 0; i < banyakMhs; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print("Masukkan nilai Mahasiswa ke-"+(i+1)+" : ");
             nilaiMhs = input12.nextInt();
             if (nilaiMhs > 70){
@@ -28,10 +29,12 @@ public class ArrayRataNilai12 {
         }
  
 
-        rata2 = total1/lulus;
-            System.out.println("Rata-rata nilai Lulus       = "+rata2);
-        rata1 = total2/tidakLulus;
-            System.out.println("Rata-rata nilai Tidak Lulus = "+rata1);
+        rata2Lulus = total1/lulus;
+            System.out.println("Rata-rata nilai Lulus       = "+rata2Lulus);
+        rata2TidakLulus = total2/tidakLulus;
+            System.out.println("Rata-rata nilai Tidak Lulus = "+rata2TidakLulus);
+
+            
 input12.close();
     }
     
